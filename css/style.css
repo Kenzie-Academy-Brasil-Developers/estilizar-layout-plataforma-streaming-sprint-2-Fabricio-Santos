@@ -54,19 +54,18 @@ button {
   border: solid 0.5px var(--corDeFontePrimaria);
   color: var(--corDeFontePrimaria);
   padding: 20px;
+  font-size: 20px;
 }
 .topo {
-  /* border: solid 2px peru; */
 }
-/* li.addPerfil {
-  border: solid 2px yellow;
-  width: 186px;
-} */
+
 ul {
   list-style: none;
   display: flex;
-  /* width: 858px; */
+  width: 858px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
 }
 footer {
   display: flex;
@@ -75,16 +74,19 @@ footer {
 img {
   width: 186px;
 }
+img:hover {
+  border: 3px solid var(--corDeFontePrimaria);
+  box-sizing: border-box;
+}
 .li-usuario {
   display: flex;
   width: 186px;
-  /* flex-direction: row; */
-  /* justify-content: space-around; */
-  /* align-content: space-around; */
+  flex-flow: column;
+  align-items: center;
 }
+
 h3 {
   display: flex;
-  /* align-items: flex-end; */
 }
 h2 {
   display: flex;
@@ -97,10 +99,31 @@ h2 {
 .blocoBaixo {
   display: flex;
 }
-@media (min-width: 1024px){
+figcaption {
+  display: none;
+}
+section {
+  display: flex;
+
+  flex-flow: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
   header.topo {
-    
     display: flex;
-    
+
     align-self: flex-start;
+  }
+  ul {
+    display: flex;
+    width: 858px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .li-usuario {
+    display: flex;
+    width: 186px;
+    flex-flow: column;
+    align-items: center;
+  }
 }
